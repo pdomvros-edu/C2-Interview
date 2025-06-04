@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Dealing with the C2 Interview</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f0f2f5;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        .header-container {
+            background-color: #fff;
+            padding: 20px 30px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid #ddd;
+        }
+        .header-container h1 {
+            margin: 0;
+            font-size: 1.8em;
+            flex: 1;
+            color: #004d99;
+        }
+        .teacher-img {
+            width: 80px;
+            height: auto;
+            margin-right: 20px;
+            transform: rotate(90deg); /* Correct orientation if needed */
+        }
+        .credit-line {
+            font-size: 0.9em;
+            color: #666;
+            line-height: 1.4;
+        }
+        .main-content {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+        .chapter-btn {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            font-size: 1.2em;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 15px 0;
+            width: 100%;
+            text-align: left;
+            transition: background-color 0.3s ease;
+        }
+        .chapter-btn:hover {
+            background-color: #0056b3;
+        }
+        .chapter-content {
+            display: none;
+            padding: 20px;
+            margin-bottom: 15px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            line-height: 1.6;
+        }
+        .chapter-content h3 {
+            margin-top: 0;
+            color: #0056b3;
+        }
+        .chapter-content ul {
+            list-style: none;
+            padding: 0;
+        }
+        .chapter-content ul li {
+            margin-bottom: 12px;
+            font-size: 1em;
+        }
+        .chapter-content ul li a {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .chapter-content ul li a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="header-container">
+        <img src="teacher.png" alt="Teacher Icon" class="teacher-img" />
+        <div>
+            <h1>Dealing with the C2 Interview</h1>
+            <div class="credit-line">
+                Created by Panagiotis Domvros 2025 (CC BY-NC)<br>
+                English Teacher – Teacher Trainer<br>
+                Principal of 1st Middle School of Pylea
+            </div>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <button class="chapter-btn" onclick="toggleSection('overview')">Overview of the Speaking Test</button>
+        <div class="chapter-content" id="overview">
+            <h3>Overview of the C2 Proficiency Speaking Test</h3>
+            <p><strong>Duration:</strong> Approximately 16 minutes per pair of candidates (24 minutes for three candidates).</p>
+            <p><strong>Examiners:</strong></p>
+            <ul>
+                <li><strong>Interlocutor:</strong> Guides the test, gives instructions, and asks questions.</li>
+                <li><strong>Assessor:</strong> Listens silently and takes notes to award marks.</li>
+            </ul>
+            <p><strong>Format:</strong></p>
+            <ul>
+                <li><strong>Part 1 (Interview):</strong> General/personal questions (≈ 2 minutes total).</li>
+                <li><strong>Part 2 (Collaborative Task):</strong> Photo discussion and decision‐making (≈ 4 minutes).</li>
+                <li><strong>Part 3 (Long Turn & Discussion):</strong> Individual short talks (≈ 2 minutes each) plus a joint discussion (≈ 4 minutes).</li>
+            </ul>
+            <p>The Speaking paper counts for 20% of the overall C2 score. Candidates are assessed on four criteria: Grammar & Vocabulary, Discourse Management, Pronunciation, and Interactive Communication.</p>
+        </div>
+
+        <button class="chapter-btn" onclick="toggleSection('before')">Before You Begin</button>
+        <div class="chapter-content" id="before">
+            <h3>Before You Begin</h3>
+            <ul>
+                <li><strong>Arrival & Seating:</strong> Enter together, greet the interlocutor (“Good morning”), and sit side by side. Three chairs: two for you, one for the interlocutor angled to see both examiners.</li>
+                <li><strong>Examiner’s Introduction:</strong> Examiner confirms names (“Could you tell me your full name?”) and outlines the format: “This test lasts about 16 minutes and has three parts. I’ll give instructions before each part.”</li>
+                <li><strong>Marking Process:</strong> Focus on the interlocutor when speaking; the assessor listens silently for interactive skills.</li>
+            </ul>
+        </div>
+
+        <button class="chapter-btn" onclick="toggleSection('part1')">Part 1: Interview</button>
+        <div class="chapter-content" id="part1">
+            <h3>Part 1: Interview (≈ 2 minutes total)</h3>
+            <p>Purpose: Warm‐up. Answer familiar questions about yourself, school life in Greece, hobbies, studies, etc.</p>
+            <p>What Happens:</p>
+            <ol>
+                <li><strong>Greeting & Names:</strong><br>
+                    <em>Interlocutor:</em> “Good morning. My name is … and this is my colleague … . Could you tell me your full name, please?”<br>
+                    <em>Candidate A:</em> “Good morning. I’m Alexandra Papadopoulos.”<br>
+                    <em>Interlocutor:</em> “And you are … ?”<br>
+                    <em>Candidate B:</em> “I’m Nikos Antoniou.”</li>
+                <li><strong>Personal Questions:</strong><br>
+                    <em>Interlocutor:</em> “Alexandra, where are you from?”<br>
+                    <em>Candidate A:</em> “I live in Thessaloniki, but my family is originally from a village near Volos.”<br>
+                    <em>Interlocutor:</em> “What subjects do you study at school?”<br>
+                    <em>Candidate A:</em> “I attend the 2nd Lyceum of Thessaloniki, focusing on Modern Greek Literature and English.”<br>
+                    <em>Interlocutor:</em> “Nikos, what extracurricular activities do you enjoy?”<br>
+                    <em>Candidate B:</em> “I’m part of my school’s basketball team and volunteer at a local youth centre.”</li>
+            </ol>
+            <h4>Tips & Strategies:</h4>
+            <ul>
+                <li>Keep answers concise but informative—2–3 full sentences.</li>
+                <li>Use a range of tenses (present perfect, past simple, future simple).</li>
+                <li>Maintain eye contact with the interlocutor.</li>
+                <li>Use topic‐related vocabulary (e.g., φροντιστήριο, Πανελλήνιες, αποκριατικοί χοροί).</li>
+            </ul>
+        </div>
+
+        <button class="chapter-btn" onclick="toggleSection('part2')">Part 2: Collaborative Task</button>
+        <div class="chapter-content" id="part2">
+            <h3>Part 2: Collaborative Task (≈ 4 minutes)</h3>
+            <p>Purpose: Assess interaction skills—compare photos, discuss pros/cons, negotiate, and decide.</p>
+            <p>Materials: Two photographs depicting teen scenarios (e.g., campus café vs. public library).</p>
+            <p>What Happens:</p>
+            <ol>
+                <li><strong>Instructions (≈ 30 seconds):</strong><br>
+                    <em>Interlocutor:</em> “Candidate A, here is your photograph. Candidate B, here is yours. You have one minute to look at your photo and make notes. Then, you will compare and decide which environment is better for preparing for the Panhellenic exams. Do you understand?”<br>
+                    <em>Candidates:</em> “Yes.”</li>
+                <li><strong>Preparation (≈ 1 minute):</strong><br>
+                    Examine your photo silently. Note key details:<br>
+                    <ul>
+                        <li><strong>Photo A:</strong> Students studying at a campus café (e.g., Aristotle University café)—background chatter, laptops, coffee cups.</li>
+                        <li><strong>Photo B:</strong> Students studying in a public library (e.g., National Library of Greece)—rows of books, study desks, reading lamps.</li>
+                    </ul></li>
+                <li><strong>Interaction (≈ 2 minutes):</strong><br>
+                    <em>Interlocutor:</em> “Candidate A, describe your photo.”<br>
+                    <em>Candidate A:</em> “In my photo, students sit at round tables in a bustling campus café, with freddo cappuccinos and laptops. It looks lively but noisy.”<br>
+                    <em>Interlocutor:</em> “Candidate B, describe yours.”<br>
+                    <em>Candidate B:</em> “My photo shows a quiet public library on Ermou Street. Students are at individual desks under lamps, reading textbooks.”<br>
+                    <em>Candidate A:</em> “The café’s social atmosphere might boost motivation, but the noise could be distracting. The library’s silence helps focus, though it feels formal.”<br>
+                    <em>Candidate B:</em> “For Panhellenic prep, I’d choose the library because uninterrupted concentration is vital.”<br>
+                    <em>Candidate A:</em> “I agree. The library’s calm environment outweighs the café’s energy.”</li>
+                <li><strong>Summary (≈ 30 seconds):</strong><br>
+                    <em>Interlocutor:</em> “Candidate A, summarise your decision.”<br>
+                    <em>Candidate A:</em> “We decided the public library is better for Panhellenic exams due to its quiet, resource‐rich environment.”</li>
+            </ol>
+            <h4>Interaction Phrases:</h4>
+            <ul>
+                <li>“In my photograph, I can see …”</li>
+                <li>“By contrast, your picture shows …”</li>
+                <li>“On the one hand, … but on the other hand, …”</li>
+                <li>“Considering these factors, I believe …”</li>
+                <li>“I agree with you because …”</li>
+                <li>“I’m not sure I share that view because …”</li>
+                <li>“An alternative might be …”</li>
+            </ul>
+        </div>
+
+        <button class="chapter-btn" onclick="toggleSection('part3')">Part 3: Long Turn & Discussion</button>
+        <div class="chapter-content" id="part3">
+            <h3>Part 3: Long Turn & Discussion (≈ 10 minutes)</h3>
+            <p>Purpose: Speak at length on a given topic and discuss related issues with your partner.</p>
+            <p>Materials: Two identical task cards with a main prompt and three bullet‐point ideas.</p>
+            <p>What Happens:</p>
+            <ol>
+                <li><strong>Instructions (≈ 20 seconds):</strong><br>
+                    <em>Interlocutor:</em> “Candidate A, here is your card. Talk for about two minutes, including all points. Candidate B, listen but do not speak. After Candidate A finishes, you may comment or ask one question. Then roles switch. Finally, we’ll discuss general questions together. Do you understand?”<br>
+                    <em>Candidates:</em> “Yes.”</li>
+                <li><strong>Candidate A’s Long Turn (≈ 2 minutes):</strong><br>
+                    <strong>Card A:</strong><br>
+                    1. An extracurricular activity Greek high schools should offer more often (e.g., robotics club, folk‐dance ensemble, debate team).<br>
+                    2. Why it benefits teens (skills, cultural identity, teamwork).<br>
+                    3. How it could be implemented (school facilities, partnerships with NTUA or Δήμος funding).<br>
+                    <p><em>Candidate A:</em><br>
+                    “Today, I’d like to discuss why every Greek high school should offer a robotics club. Firstly, robotics combines creativity with technical skills: students learn programming and engineering by building simple robots. For example, at a summer workshop in Athens, teens were excited to program Lego Mindstorms. Secondly, it fosters teamwork and problem‐solving—essential for university and future careers. Thirdly, implementation is feasible: schools can partner with NTUA or local tech companies for kits. In conclusion, a robotics club prepares students for STEM and encourages innovation.”</p></li>
+                <li><strong>Candidate B’s Response (≈ 30 seconds):</strong><br>
+                    <em>Interlocutor:</em> “Thank you. Candidate B, do you have a question or comment?”<br>
+                    <em>Candidate B:</em> “You mentioned NTUA partnerships. How would rural schools access mentorship?”<br>
+                    <em>Candidate A:</em> “Good question. Rural schools could use online mentorship—live video workshops—and collaborate with local Τεχνικά Λύκεια to share resources.”</li>
+                <li><strong>Candidate B’s Long Turn (≈ 2 minutes):</strong><br>
+                    <strong>Card B:</strong><br>
+                    1. A traditional Greek festival your school could celebrate more (e.g., Apokries, panigyri, Kathara Deftera).<br>
+                    2. Why it’s culturally important.<br>
+                    3. How schools could incorporate it (dance workshops, historical presentations, local musicians).<br>
+                    <p><em>Candidate B:</em><br>
+                    “I’d like to talk about the Apokries carnival. Firstly, it preserves cultural heritage through traditional costumes and dances. Last year, our school held a small Apokries fair—students performed Kalamatianos and Tisios dances. Secondly, it engages the community: parents and local craftsmen were invited to teach mask‐making. Thirdly, implementing it school‐wide could involve partnering with local ΚΕΔΗΘ for costumes and hosting an annual student parade. In conclusion, celebrating Apokries fosters cultural pride and unites students with their heritage.”</p></li>
+                <li><strong>General Discussion (≈ 4 minutes):</strong><br>
+                    <em>Interlocutor:</em> “Now, let’s discuss some broader questions. First: Should Greek high schools prioritize STEM clubs or cultural heritage programs?”<br>
+                    <em>Candidate A:</em> “I believe both are essential. STEM skills prepare for future jobs, while cultural programs build identity. A balanced approach, such as a robotics competition alongside a folk‐dance showcase, would be ideal.”<br>
+                    <em>Candidate B:</em> “I agree, but if forced to choose, I lean toward cultural heritage because it strengthens community bonds and tourism, which is vital for Greece’s economy.”<br>
+                    <em>Interlocutor:</em> “Second: How can schools support students’ mental health during Panhellenic prep?”<br>
+                    <em>Candidate A:</em> “Schools could offer mindfulness sessions and peer support groups, possibly funded by Δήμος or ΕΣΠΑ grants.”<br>
+                    <em>Candidate B:</em> “Additionally, online counseling with ΚΕΘΕΑ partnerships could reduce stigma and provide accessible help.”</li>
+            </ol>
+        </div>
+
+        <button class="chapter-btn" onclick="toggleSection('strategies')">Strategies for Candidates</button>
+        <div class="chapter-content" id="strategies">
+            <h3>Strategies for Candidates</h3>
+            <ul>
+                <li><strong>Familiarise Yourself with Local Contexts:</strong><br>
+                    • Practice Part 1 using topics like Panhellenic exams, φροντιστήριο routines, family traditions.<br>
+                    • Example question: “How has preparing for the Πανελλαδικές impacted your daily schedule?”</li>
+                <li><strong>Use Relevant Examples in Part 2:</strong><br>
+                    • Compare studying in a kafeneio in Mykonos vs. studying in the public library in Patras.<br>
+                    • Discuss group study on the Aristotle campus vs. quiet revision at Δημοτική Βιβλιοθήκη Θεσσαλονίκης.</li>
+                <li><strong>Choose Engaging Part 3 Topics:</strong><br>
+                    • Extracurriculars: “Why Greek language clubs should be more common.”<br>
+                    • Cultural topics: “The significance of the 28η Οκτωβρίου parade.”<br>
+                    • Mental health: “Coping strategies for Panhellenic stress.”</li>
+                <li><strong>Develop Interactive Communication:</strong><br>
+                    • Practice with a partner: “What do you think about studying in a καφενείο near the Acropolis?”<br>
+                    • Record discussions to refine follow‐up questions that feel natural.</li>
+                <li><strong>Expand Vocabulary on Greek Themes:</strong><br>
+                    • Compile terms related to φροντιστήρια, Πανελλήνιες, πανηγύρια, περιοδεία Erasmus+, πολιτιστικά δρώμενα.</li>
+                <li><strong>Refine Pronunciation & Intonation:</strong><br>
+                    • Listen to English podcasts recorded in Greece (e.g., British Council Athens interviews) and mimic accent patterns.</li>
+                <li><strong>Stay Calm & Confident:</strong><br>
+                    • If you lose your train of thought, pause: “Sorry, let me rephrase that …”<br>
+                    • Minor hesitations are expected—focus on resilience.</li>
+            </ul>
+        </div>
+
+        <button class="chapter-btn" onclick="toggleSection('phrasebank')">Phrase Bank</button>
+        <div class="chapter-content" id="phrasebank">
+            <h3>Phrase Bank</h3>
+            <h4>A. Greeting & Introduction (Part 1)</h4>
+            <ul>
+                <li>“Good morning. I’m Alexandra Papadopoulos from Thessaloniki.”</li>
+                <li>“I live in Patras, but my family is originally from Crete.”</li>
+                <li>“I attend the 2nd Lyceum of Heraklion, focusing on Modern Greek and Biology for university entrance.”</li>
+            </ul>
+
+            <h4>B. Answering Personal Questions (Part 1)</h4>
+            <ul>
+                <li>“My hometown is a seaside village in the Peloponnese, famous for its olive groves.”</li>
+                <li>“I go to a private φροντιστήριο after school to prepare for the Panhellenic exams in Physics and English.”</li>
+                <li>“In my free time, I play the bouzouki with a local folk group at community events.”</li>
+            </ul>
+
+            <h4>C. Describing Photographs (Part 2)</h4>
+            <ul>
+                <li>“In my photograph, students are studying at a café in Plaka with freddo cappuccinos and koulouri.”</li>
+                <li>“Your photo shows the National Library of Greece with high ceilings and rows of desks.”</li>
+                <li>“While the café’s vibe is lively, the library’s quiet setting is better for focusing on Panhellenic topics.”</li>
+                <li>“An alternative might be studying at the ΚΠΙΣΝ reading rooms for fresh air and fewer distractions.”</li>
+            </ul>
+
+            <h4>D. Interaction Phrases</h4>
+            <ul>
+                <li>“What do you think about studying in a καφενείο?”</li>
+                <li>“I completely agree, because when I revised last year, silence was crucial.”</li>
+                <li>“I see your point, but I feel a bit of background noise can boost motivation.”</li>
+                <li>“Could you clarify what you mean by ‘too formal’ for the library?”</li>
+            </ul>
+
+            <h4>E. Structuring a Long Turn (Part 3)</h4>
+            <ul>
+                <li>“Today, I’d like to speak about why Greek schools should offer robotics workshops.”</li>
+                <li>“Firstly, robotics teaches programming and engineering through hands‐on projects.”</li>
+                <li>“For example, at a summer camp in Athens, teens built line‐following robots.”</li>
+                <li>“However, funding kits can be challenging; partnering with NTUA could help.”</li>
+                <li>“To sum up, robotics clubs prepare students for STEM careers and foster creativity.”</li>
+            </ul>
+
+            <h4>F. Discussion & Abstract Language</h4>
+            <ul>
+                <li>“That brings me to another question: should schools prioritise STEM or cultural heritage?”</li>
+                <li>“I agree with you entirely, and I’d add that digital skills are vital for future jobs.”</li>
+                <li>“I see your point, but I think preserving local traditions is equally important.”</li>
+                <li>“On balance, investing in cultural programs may boost tourism, which is crucial for Greece’s economy.”</li>
+                <li>“It’s likely that hybrid online/traditional teaching methods will become the norm in the next five years.”</li>
+            </ul>
+
+            <h4>G. Turn‐Taking & Interaction Management</h4>
+            <ul>
+                <li>“If I may add something …”</li>
+                <li>“May I just say …”</li>
+                <li>“What do you think, Nikos?”</li>
+                <li>“Are you following my reasoning?”</li>
+                <li>“Sorry, could you repeat that, please?”</li>
+                <li>“I misspoke—what I meant was …”</li>
+            </ul>
+
+            <h4>H. Photo Comparison & Decision Task Language</h4>
+            <ul>
+                <li>“In my photograph, students revise at a café near Monastiraki with freddo cappuccinos.”</li>
+                <li>“Your photo shows the National Library of Greece, which is very quiet and well‐lit.”</li>
+                <li>“Considering Panhellenic prep, I’d choose the library for its silence and resources.”</li>
+                <li>“The café might be better for group brainstorming, though.”</li>
+            </ul>
+
+            <h4>I. Asking for Clarification or Repetition</h4>
+            <ul>
+                <li>“I’m sorry, I didn’t catch that—could you repeat?”</li>
+                <li>“Excuse me, could you clarify what you mean by φροντιστήριο workload?”</li>
+                <li>“Pardon me, would you mind explaining that in another way?”</li>
+                <li>“I’m not sure I follow; could you repeat the part about Δήμος grants?”</li>
+            </ul>
+
+            <h4>J. Concluding the Exam</h4>
+            <ul>
+                <li>“That’s all I wanted to say—thank you.”</li>
+                <li>“Thank you for this discussion; I enjoyed exchanging ideas.”</li>
+                <li>“Thanks very much. Goodbye.”</li>
+                <li>“Thank you for your time—have a good day.”</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        function toggleSection(id) {
+            const section = document.getElementById(id);
+            section.style.display = (section.style.display === 'block') ? 'none' : 'block';
+        }
+    </script>
+</body>
+</html>
